@@ -1,0 +1,14 @@
+.container{
+    padding: 20px;
+}
+
+.form-container{
+    padding: 0px 20px;
+    .col-padding{
+        padding: 6px;
+        height: 80px;
+    }
+    @media (max-width: 768px){
+        padding: 0px;
+    }
+}
