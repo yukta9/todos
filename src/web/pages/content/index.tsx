@@ -11,6 +11,7 @@ const Content: React.FC = () => {
     const [dropdown, setDropdown] = useState(true);
     const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
 
+    
     const handleClick = () => {
         setDropdown(prev => !prev);
     };
@@ -49,7 +50,9 @@ const Content: React.FC = () => {
                         </Row>
                     ) )
                 }
+                
             </div>
+
 
             {/* {dropdown && <div className="dropdown-container"> 
                 {Options.map(option => (
