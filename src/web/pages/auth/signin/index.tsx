@@ -12,9 +12,10 @@ const Signin: React.FC = () => {
 
   const handleSubmit = async (values: any) => {
   const response = await signIn(values); 
-  console.log(response);
+ 
   if (response?.data.auth) {
     localStorage.setItem("userData", JSON.stringify(response));
+    console.log(response);
     
     navigate("/dashboard");
   }
